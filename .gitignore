@@ -1,0 +1,31 @@
+# Ignore all files ending with .log in any directory
+*.log
+
+# Ignore a specific file
+my_secret_api_keys.txt
+
+# Ignore the entire 'build/' directory and all its contents
+# A trailing slash indicates a directory
+build/
+
+# Ignore the entire 'node_modules/' directory commonly used for dependencies
+node_modules/
+
+# Ignore all files in the 'temp/' directory, but not the directory itself
+temp/*
+
+# Ignore all files ending in .tmp anywhere in the repository
+*.tmp
+
+# Ignore specific operating system generated files
+.DS_Store
+Thumbs.db
+
+# Use a leading slash to ignore "config.sys" in the root directory only
+/config.sys
+
+# Exception: Ignore all .config files, but include the important "config.production.sys"
+*.config
+!config.production.sys
+
+# Comments start with a hash (#)
